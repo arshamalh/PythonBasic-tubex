@@ -1,9 +1,10 @@
 def even_odd(num):
     for i in range(num + 1):
+        if i == 0: continue
         if i % 2 == 0:
-            yield "Even " + str(i)
+            yield "Even : " + str(i)
         else:
-            yield "Odd  " + str(i)
+            yield "Odd  : " + str(i)
 
 
 number = int(input('please enter a number: '))
