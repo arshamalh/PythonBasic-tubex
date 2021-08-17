@@ -1,41 +1,48 @@
-def element_search(li, num):
-    li = list(set(li))
-    print(li)
-    center = 1
-    while center != 0:
-        center = len(li) // 2
-        print(f"center index is: {center}")
-        if li[center] == num:
-            print(f'{num} is in the list')
-            break
-        elif li[center] > num:
-            li = li[:center]
-            print(f'cut list is: {li}')
-        elif li[center] < num:
-            li = li[center + 1:]
-            print(f'cut list is: {li}')
-    else:
-        print("the number isn't in the list")
+# complex list comprehension with conditions and some loop
+x = [1, 2, 3]
+y = [5, 10, 15]
+customlist = [a*b for a in x for b in y if a*b % 2 != 0]
 
+a = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+evens = [even for even in a if even % 2 != 0]
+print(evens)
 
-# there are lot's of methods for receiving a list
-# I've just told one of them, try others by yourself
-inp_list = input('Enter a list: ').split(' ')
-managed_list = []
-for x in inp_list:
-    if x.isdigit():
-        managed_list.append(int(x))
-del inp_list
-element_search(managed_list, int(input('enter a number: ')))
+# Write a Python program to check whether a specified value is contained in a group of values.
+checking_value = int(input('> '))
+items = [int(c) for c in list(input('> ')) if c.isnumeric()]
+print(checking_value in items)
 
+# Compute the digit number of sum of two given integers
+# Make a tutorial about map and filter
+a, b = map(int, input("Input two integers(a b): ").split(" "))
+print("Number of digit of a and b:", len(str(a+b)))
 
+# create a random list
+# This line of code will leave a containing a list of 5 random numbers from 0 to 9
+import random
+a = random.sample(range(10), 5)
+
+import random
+a = random.sample(range(10), random.randint(1, 10))
+b = random.sample(range(10), random.randint(1, 10))
+result = list(dict.fromkeys([num_a for num_a in a for num_b in b if num_a == num_b]))
+print(f'A: {a}')
+print(f'B: {b}')
+print(f'Result: {result}')
+
+# duplicate remover:
 """
-another method:
-inp_list = []
-try:
-    while True:
-        inp_list.append(int(input(f'the {len(inp_list)} of your list: ')))
-except:
-    pass
-print(inp_list)
+print(result)
+for x in result:
+    detect = result.count(x)
+    if detect > 1:
+        i = 0
+        while i < detect - 1:
+            result.remove(x)
+            print(i)
+            i += 1
+print(f'Result is :{result}')
+# easier way:
+result = list(dict.fromkeys(result))
+print(result)
 """
