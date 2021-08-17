@@ -1,3 +1,4 @@
+# Calculating sin with Taylor series without math lib
 from Ex06_Factorial import factorial
 def sin(degree, accuracy):
     result = 0
