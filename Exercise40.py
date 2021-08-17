@@ -3,6 +3,10 @@ x = [1, 2, 3]
 y = [5, 10, 15]
 customlist = [a*b for a in x for b in y if a*b % 2 != 0]
 
+a = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+evens = [even for even in a if even % 2 != 0]
+print(evens)
+
 # create a random list
 # This line of code will leave a containing a list of 5 random numbers from 0 to 9
 import random

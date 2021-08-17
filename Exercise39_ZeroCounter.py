@@ -1,8 +1,6 @@
 # Write a Python program to find the number of zeros at the end of a factorial of a given positive number.
-from . import factorial
-def zero_separator(number):
-    number = factorial(number)
-    print(number)
+from Ex09_Factorial import factorial
+def ZeroCounter(number):
     n_o_digits = 0
     while number % 10 == 0:
         number //= 10
@@ -10,4 +8,4 @@ def zero_separator(number):
 
     print(n_o_digits)
 
-zero_separator(int(input('> ')))
+ZeroCounter(factorial(int(input('> '))))

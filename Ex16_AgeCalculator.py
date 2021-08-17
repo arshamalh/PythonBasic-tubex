@@ -5,3 +5,9 @@ f_date = date(2014, 7, 2)
 l_date = date(2014, 7, 11)
 delta = l_date - f_date
 print(delta.days)
+
+# Print the calendar of a given month and year
+import calendar
+y = int(input("Input the year : "))
+m = int(input("Input the month : "))
+print(calendar.month(y, m))

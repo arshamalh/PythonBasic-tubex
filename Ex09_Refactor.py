@@ -29,7 +29,3 @@ for i in range(len(result)):
             result[i] = temp
 
 print(f'Result is :{result}')
-
-# easier way:
-print(sorted(list(set([i for i in a for j in b if i == j]))))
-# Humans have to improve themselves... :)

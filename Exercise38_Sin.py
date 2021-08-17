@@ -1,11 +1,4 @@
-def factorial(n):
-    if n == 0:
-        fac = 1
-    else:
-        fac = 1
-        for i in range(1, n+1):
-            fac *= i
-    return fac
+from Ex09_Factorial import factorial
 def sin(degree, accuracy):
     result = 0
     j = 0

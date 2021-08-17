@@ -39,3 +39,11 @@ while True:
             u_wins += 1
     print(f' User Wins: {u_wins} \n Computer Wins: {c_wins} \n Computer Choice was: {c_choice}')
 
+
+# also for a random list with a random size
+import random
+numlist = []
+list_length = random.randint(5, 15)
+while len(numlist) < list_length:
+    numlist.append(random.randint(1, 75))
+
