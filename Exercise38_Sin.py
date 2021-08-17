@@ -1,4 +1,4 @@
-from Ex09_Factorial import factorial
+from Ex06_Factorial import factorial
 def sin(degree, accuracy):
     result = 0
     j = 0
