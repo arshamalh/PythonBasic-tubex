@@ -1,4 +1,5 @@
-# method one
+# method one (Without sort method)
+# Also look at sorting algorithme
 sam_li = [2, 7, 8, 12, 5, 6, 1, 3]
 for i in range(len(sam_li)):
     for j in range(len(sam_li)):

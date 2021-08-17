@@ -1,16 +1,16 @@
 # Get all possible two digit letter combinations from a digit string
 # way 1:
 string_maps = {
-                "1": "abc",
-                "2": "def",
-                "3": "ghi",
-                "4": "jkl",
-                "5": "mno",
-                "6": "pqrs",
-                "7": "tuv",
-                "8": "wxy",
-                "9": "z"
-            }
+    "1": "abc",
+    "2": "def",
+    "3": "ghi",
+    "4": "jkl",
+    "5": "mno",
+    "6": "pqrs",
+    "7": "tuv",
+    "8": "wxy",
+    "9": "z"
+}
 upper_bound = len(string_maps) + 1
 for i in range(1, upper_bound):
     for j in range(1, upper_bound):
