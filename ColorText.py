@@ -1,0 +1,1 @@
+def color(red, green, blue, text): return f"\033[38;2;{red};{green};{blue}m{text} \033[0;2;255;255;255m"

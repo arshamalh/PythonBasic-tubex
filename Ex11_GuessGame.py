@@ -21,9 +21,9 @@ while True:
             print('right choice')
             print(f"you've got {mistakes} times mistakes")
             break
-        elif guess - inp > 3 or inp - guess > 3:
+        elif abs(guess - inp) > 3:
             print('your choice is too far')
             mistakes += 1
-        elif guess - inp <= 3 or inp - guess >= 3:
+        elif abs(guess - inp) <= 3:
             print('your choice is close')
             mistakes += 1
