@@ -1,4 +1,6 @@
-def colored(r, g, b, text):
-    return "\033[38;2;{};{};{}m{} \033[38;2;255;255;255m".format(r, g, b, text)
+user_st = input("Please enter a string: ").lower()
+detector = True
 
-print(colored(250, 50, 50, "Hello world"))
+for i in range(len(user_st) // 2): # divide and cut the floats
+    pass
+

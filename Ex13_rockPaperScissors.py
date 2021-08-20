@@ -30,3 +30,11 @@ while True:
     ) or (inp == 's' and c_choice == 'p'): u_wins += 1
 
     print(f' User Wins: {color(50, 250, 50, u_wins)} \n Computer Wins: {color(250, 50, 50, c_wins)} \n You {Shaper[inp]}  vs {Shaper[c_choice]}  Computer')
+
+
+# TIPs: 
+# Lots of conditions
+# fStrings are useful
+# Importing your own modules
+# How to keep your application going
+# Hash Table!
