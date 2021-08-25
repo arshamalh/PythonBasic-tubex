@@ -1,25 +1,23 @@
-# a password have to have LowerCase - UpperCase - Numbers and Symbols
-import random
-import string
-def PassGenerator(lenP=0):
-    def shortPass():
-        u_pass = [random.choice(string.ascii_lowercase), 
-                  random.choice(string.ascii_uppercase),
-                  random.choice(string.digits), 
-                  random.choice(string.punctuation)]
+import random, string
 
-        random.shuffle(u_pass)
-        return ''.join(u_pass)
+def RandomChar(types="luns"):
+    TypeValues = {
+        "l": string.ascii_lowercase,
+        "u": string.ascii_uppercase,
+        "n": string.digits,
+        "s": string.punctuation
+    }
+    return [random.choice(TypeValues[item]) for item in types if item in TypeValues]
 
-    if lenP == 0: lenP = random.randint(8, 16)
-    elif lenP < 4: return "Your password is totally unsafe"
-    elif lenP == 4: return shortPass()
-    
-    Upass = []
-    while len(Upass) < lenP: Upass.append(shortPass()[0])
-    return ''.join(Upass)
+def PassGenerator(LenP=0): # 0 stands for random length
+    # RandomChar will get a string of characters needed and return a list of random characters.
 
+    if LenP == 0: LenP = random.randint(8, 16)
+    elif LenP == 4: return "".join(RandomChar())
+    elif LenP < 4: raise ValueError("Your password is totally unsafe!")
+
+    uPass = [RandomChar()[random.randint(0, 3)] for _ in range(LenP)]
+    random.shuffle(uPass)
+    return "".join(uPass)
 
 print(PassGenerator())
-
-
