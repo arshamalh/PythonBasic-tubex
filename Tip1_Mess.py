@@ -77,16 +77,14 @@ x = 4
 print(format(x, '02x'))
 
 # duplicate remover:
+import random
 SampleList = [random.randint(1, 9) for _ in range(1, 20)] # It will have at least twice of any number
 def DuplicateRemover(GivenList):
+    result = []
     for x in GivenList:
-        detect = GivenList.count(x)
-        if detect > 1:
-            i = 0
-            while i < detect - 1:
-                GivenList.remove(x)
-                i += 1
-    return GivenList
+        if x not in result: result.append(x)
+    return result
+print(f'Sample is :{SampleList}')
 print(f'Result is :{DuplicateRemover(SampleList)}')
 # easier way:
 SampleList = list(dict.fromkeys(SampleList))
