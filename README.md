@@ -1,2 +1,2 @@
 # PythonBasic-tubex
-Not Real world or big projects, basic and some mathematical examples for beginners.
+There are lots of Basic examples for beginners in this Repo.

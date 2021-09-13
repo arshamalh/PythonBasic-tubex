@@ -1,20 +1,18 @@
-import random
-a = [random.randint(1, 10) for _ in range(1, 10)]
-b = [random.randint(1, 10) for _ in range(1, 10)]
-result = [num_a for num_a in a if num_a in b]
-print(f'Array1:{a}', f'Array2:{b}', f'Unarranged list: {result}',  sep="\n")
-print(f'Result is :{sorted(list(set(result)))}')
+import random, string
+def PassGenerator(LenP=0): # if we want to make argument optional, we have to pass a default value to it
+    # Define letters
+    TypeValues = (string.ascii_lowercase, string.ascii_uppercase, string.digits, string.punctuation)
 
-# Refactoring
-# Making random list
-# Finding intersections
-# Duplication Remover
-# But before that, we want to show you what this app is made for and how it works
-# It's so helpful and has a lot of tricks
-# this app makes two random lists and find the intersection of them
+    # Custom or Random len
+    if LenP == 0: LenP = random.randint(8, 16)
+    elif LenP < 4: raise ValueError("Your password is totally unsafe!")
 
-# We got array 1 and array 2 as random lists and unarranged result
-# unarranged list is the one which is not ordered and have duplicated values (for example four times six and three times 2)
-# And as intersection means, any number in unarranged list has to be in both of lists. (for exmaple 1 and 3 are only in the array 2)
+    # Making the list
+    uPass = [random.choice(TypeValues[i % 4]) for i in range(LenP)] 
+    random.shuffle
 
-# TODO: Before we go to the exercise, first decrease the lines of code without destroying the functionality (Pause and think part)
+
+# Suffle will move characters around in place and return none
+
+# To solve that problem we can use Cyclic algorithm
+# Cyclic algorithms get a number and return the corresponding in a specific range of numbers
