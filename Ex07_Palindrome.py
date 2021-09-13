@@ -1,3 +1,6 @@
+# Check out my Youtube channel:
+# https://www.youtube.com/channel/UCRYxPJle46XMws4ewJE-ShQ
+
 # Palindrome
 user_st = input("please enter your string: ").lower()
 detector = True

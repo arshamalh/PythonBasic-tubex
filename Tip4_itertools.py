@@ -1,3 +1,6 @@
+# Check out my Youtube channel:
+# https://www.youtube.com/channel/UCRYxPJle46XMws4ewJE-ShQ
+
 # Write a Python program to create all possible strings by using 'a', 'e', 'i', 'o', 'u'. Use the characters exactly once.
 # TODO: Make a full tutorial around itertools
 from itertools import permutations

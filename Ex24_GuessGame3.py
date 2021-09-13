@@ -1,3 +1,6 @@
+# Check out my Youtube channel:
+# https://www.youtube.com/channel/UCRYxPJle46XMws4ewJE-ShQ
+
 c_guess = 50
 widedict = {}
 lowest = 0

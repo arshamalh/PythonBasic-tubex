@@ -1,3 +1,6 @@
+# Check out my Youtube channel:
+# https://www.youtube.com/channel/UCRYxPJle46XMws4ewJE-ShQ
+
 def element_search(li, num):
     li = list(set(li))
     print(li)

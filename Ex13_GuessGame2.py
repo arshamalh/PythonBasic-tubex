@@ -1,3 +1,6 @@
+# Check out my Youtube channel:
+# https://www.youtube.com/channel/UCRYxPJle46XMws4ewJE-ShQ
+
 """
 Generate a random number between 1 and 9 (including 1 and 9). Ask the user to guess the number,
 then tell them whether they guessed close, too far, or exactly right.

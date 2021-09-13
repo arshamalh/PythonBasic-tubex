@@ -1,3 +1,6 @@
+# Check out my Youtube channel:
+# https://www.youtube.com/channel/UCRYxPJle46XMws4ewJE-ShQ
+
 # Add two integers without using the '+' operator
 def add_without_plus_operator(a, b):
     while b != 0:

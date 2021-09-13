@@ -1,3 +1,6 @@
+# Check out my Youtube channel:
+# https://www.youtube.com/channel/UCRYxPJle46XMws4ewJE-ShQ
+
 # Write a program to calculate the summation of all numbers before a limitation which are divisible by 3 or 7
 def SumDiv(limit, number_1=3, number_2=7):
     sum = 0

@@ -1,3 +1,6 @@
+# Check out my Youtube channel:
+# https://www.youtube.com/channel/UCRYxPJle46XMws4ewJE-ShQ
+
 import random, string
 
 def PassGenerator(LenP=0): # if we want to make argument optional, we have to pass a default value to it

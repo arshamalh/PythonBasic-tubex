@@ -1,3 +1,6 @@
+# Check out my Youtube channel:
+# https://www.youtube.com/channel/UCRYxPJle46XMws4ewJE-ShQ
+
 # Get all possible two digit letter combinations from a digit string
 # Way 1: Fucking hard four for loops!
 string_maps = {

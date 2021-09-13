@@ -1,3 +1,6 @@
+# Check out my Youtube channel:
+# https://www.youtube.com/channel/UCRYxPJle46XMws4ewJE-ShQ
+
 # Creating a fizz buzz 
 
 # A Fizz Buzz is an app which show you if a given number is 

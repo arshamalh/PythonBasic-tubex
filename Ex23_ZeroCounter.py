@@ -1,3 +1,6 @@
+# Check out my Youtube channel:
+# https://www.youtube.com/channel/UCRYxPJle46XMws4ewJE-ShQ
+
 # Write a Python program to find the number of zeros at the end of a factorial of a given positive number.
 from Ex06_Factorial import factorial
 def ZeroCounter(number):

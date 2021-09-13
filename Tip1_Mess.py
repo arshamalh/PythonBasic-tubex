@@ -1,19 +1,11 @@
+# Check out my Youtube channel:
+# https://www.youtube.com/channel/UCRYxPJle46XMws4ewJE-ShQ
+
 """
 11.	What does name.strip() do?
 5.	What happens when we prefix a parameter with an asterisk (*)?
 6.	What about two asterisks (**)?
 """
-
-# Get the details of math module
-import math
-math_ls = dir(math)
-print(math_ls)
-
-# Find the available built-in modules
-import sys
-import textwrap
-module_name = ', '.join(sorted(sys.builtin_module_names))
-print(textwrap.fill(module_name, width=60))
 
 # Input a number, if it is not a number generate an error message
 while True:
@@ -23,7 +15,6 @@ while True:
     except ValueError:
         print("\nThis is not a number. Try again...")
         print()
-
 
 # complex list comprehension with conditions and some loop
 x = [1, 2, 3]
@@ -57,19 +48,47 @@ print(f'A: {a}')
 print(f'B: {b}')
 print(f'Result: {result}')
 
+# Concatenate N strings
+list_of_colors = ['Red', 'White', 'Black']
+colors = '-'.join(list_of_colors)
+print()
+print("All Colors: "+colors)
+print()
+
+# Display a floating number in specified numbers
+order_amt = 212.374
+print('\nThe total order amount comes to %f' % order_amt)
+print('The total order amount comes to %.2f' % order_amt)
+print()
+
+# Check whether lowercase letters exist in a string
+str1 = 'A8238i823acdeOUEI'
+print(any(c.islower() for c in str1))
+
+# Convert an integer to binary keep leading zeros
+x = 12
+print(format(x, '08b'))
+print(format(x, '010b'))
+
+# Convert decimal to hexadecimal
+x = 30
+print(format(x, '02x'))
+x = 4
+print(format(x, '02x'))
+
 # duplicate remover:
-"""
-print(result)
-for x in result:
-    detect = result.count(x)
-    if detect > 1:
-        i = 0
-        while i < detect - 1:
-            result.remove(x)
-            print(i)
-            i += 1
-print(f'Result is :{result}')
+SampleList = [random.randint(1, 9) for _ in range(1, 20)] # It will have at least twice of any number
+def DuplicateRemover(GivenList):
+    for x in GivenList:
+        detect = GivenList.count(x)
+        if detect > 1:
+            i = 0
+            while i < detect - 1:
+                GivenList.remove(x)
+                i += 1
+    return GivenList
+print(f'Result is :{DuplicateRemover(SampleList)}')
 # easier way:
-result = list(dict.fromkeys(result))
-print(result)
-"""
+SampleList = list(dict.fromkeys(SampleList))
+print(SampleList)
+

@@ -1,3 +1,6 @@
+# Check out my Youtube channel:
+# https://www.youtube.com/channel/UCRYxPJle46XMws4ewJE-ShQ
+
 # Make two simple histogram drawer apps
 
 # Write an app to get a space separated list and make a histogram just in one line!

@@ -1,3 +1,6 @@
+# Check out my Youtube channel:
+# https://www.youtube.com/channel/UCRYxPJle46XMws4ewJE-ShQ
+
 # Write a Python function that takes a list of words and returns the length of the longest one.
 def longest_word(li):  # li => list
     longest = li[0]

@@ -1,3 +1,6 @@
+# Check out my Youtube channel:
+# https://www.youtube.com/channel/UCRYxPJle46XMws4ewJE-ShQ
+
 # Calculate number of days between two dates
 # More interesting exercises (such as age calculator)
 from datetime import date

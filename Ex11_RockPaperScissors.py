@@ -1,3 +1,6 @@
+# Check out my Youtube channel:
+# https://www.youtube.com/channel/UCRYxPJle46XMws4ewJE-ShQ
+
 # Hint: Ask for player plays (using input), compare them,
 # print out a message of congratulations to the winner,
 # and ask if the players want to start a new game

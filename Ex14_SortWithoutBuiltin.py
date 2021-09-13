@@ -1,3 +1,6 @@
+# Check out my Youtube channel:
+# https://www.youtube.com/channel/UCRYxPJle46XMws4ewJE-ShQ
+
 # method one (Without sort method)
 # Also look at sorting algorithme
 from ColorText import color

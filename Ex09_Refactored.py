@@ -1,3 +1,6 @@
+# Check out my Youtube channel:
+# https://www.youtube.com/channel/UCRYxPJle46XMws4ewJE-ShQ
+
 import random
 a = [random.randint(1, 10) for _ in range(1, 10)]
 b = [random.randint(1, 10) for _ in range(1, 10)]

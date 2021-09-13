@@ -1,3 +1,6 @@
+# Check out my Youtube channel:
+# https://www.youtube.com/channel/UCRYxPJle46XMws4ewJE-ShQ
+
 def factorial(n):
     if n < 0: raise ValueError("Can't pass negative values to factorial")
     if n == 0: return 1 # 0! == 1

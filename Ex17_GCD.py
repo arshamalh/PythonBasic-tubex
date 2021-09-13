@@ -1,3 +1,6 @@
+# Check out my Youtube channel:
+# https://www.youtube.com/channel/UCRYxPJle46XMws4ewJE-ShQ
+
 # Write a Python program to compute the greatest common divisor (GCD) of two positive integers.
 """
 (6, 9)

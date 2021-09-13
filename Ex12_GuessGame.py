@@ -1,3 +1,6 @@
+# Check out my Youtube channel:
+# https://www.youtube.com/channel/UCRYxPJle46XMws4ewJE-ShQ
+
 """
 Randomly generate a 4-digit number. Ask the user to guess a 4-digit number.
 For every digit that the user guessed correctly in the correct place, they have a “cow”.

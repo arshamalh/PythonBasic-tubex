@@ -1,3 +1,6 @@
+# Check out my Youtube channel:
+# https://www.youtube.com/channel/UCRYxPJle46XMws4ewJE-ShQ
+
 # Check whether a file path is a file or a directory
 import os
 path = "abc.txt"
@@ -26,19 +29,11 @@ print(f"Memory size of '{str2}' = {sys.getsizeof(str2)} bytes")
 print(f"Memory size of '{str3}' = {sys.getsizeof(str3)} bytes")
 print()
 
-# Display a floating number in specified numbers
-order_amt = 212.374
-print('\nThe total order amount comes to %f' % order_amt)
-print('The total order amount comes to %.2f' % order_amt)
-print()
-
-
 # Determine the largest and smallest integers, longs, floats
 import sys
 print("Float value information: ",sys.float_info)
 print("\nInteger value information: ",sys.int_info)
 print("\nMaximum size of an integer: ",sys.maxsize)
-
 
 # Get the system time
 # Note : The system time is important for debugging,
@@ -55,10 +50,8 @@ print()
 print("Host name:", host_name)
 print()
 
-
-
-import os
-import time
+# List files
+import os, time
 from datetime import datetime
 list_of_files = os.listdir(os.getcwd())
 list_of_files.sort(key=os.path.getctime)
@@ -66,29 +59,16 @@ list_of_times = [datetime.strptime(time.ctime(os.path.getctime(a)), "%a %b %d %H
 for name, time in zip(list_of_files, list_of_times):
     print(f'{name}: {time.strftime("%A %d %B %Y - %H:%M:%S")}')
 
+# Get the details of math module
+import math
+math_ls = dir(math)
+print(math_ls)
 
-# Concatenate N strings
-list_of_colors = ['Red', 'White', 'Black']
-colors = '-'.join(list_of_colors)
-print()
-print("All Colors: "+colors)
-print()
-
-# Check whether lowercase letters exist in a string
-str1 = 'A8238i823acdeOUEI'
-print(any(c.islower() for c in str1))
-
-# Convert an integer to binary keep leading zeros
-x = 12
-print(format(x, '08b'))
-print(format(x, '010b'))
-
-# Convert decimal to hexadecimal
-x = 30
-print(format(x, '02x'))
-x = 4
-print(format(x, '02x'))
-
+# Find the available built-in modules
+import sys
+import textwrap
+module_name = ', '.join(sorted(sys.builtin_module_names))
+print(textwrap.fill(module_name, width=60))
 
 # Get a list of locally installed Python modules
 import pkg_resources
