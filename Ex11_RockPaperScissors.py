@@ -13,24 +13,32 @@ if you want to exit, just type 'exit'
 if you want to play again from zero, just type 'again'
 """)
 states = ['r', 'p', 's']
-c_wins, u_wins, c_choice = 0, 0, ""
-Shaper = {"r": "💎︁", "p": "📜︁", "s": "✀︁"}
+c_wins, u_wins = 0, 0
+Shaper = {"r": "💎︁",
+          "p": "📜︁",
+          "s": "✀︁"}
+
 while True:
     inp = input("> ").lower()[0]
     c_choice = choice(states)
     if inp == 'e':
-        print('thank you for playing with us!')
+        print('Thank you for playing with us!')
         break
     
-    elif inp == 'a': c_wins, u_wins, c_choice = 0, 0, ""
+    elif inp == 'a': 
+        c_wins, u_wins = 0, 0
+        print("Restarted!")
+        continue
 
     elif (inp == 'r' and c_choice == 'p'
     ) or (inp == 'p' and c_choice == 's'
     ) or (inp == 's' and c_choice == 'r'): c_wins += 1
-    
+
     elif (inp == 'r' and c_choice == 's'
     ) or (inp == 'p' and c_choice == 'r'
     ) or (inp == 's' and c_choice == 'p'): u_wins += 1
+
+    else: continue
 
     print(f' User Wins: {color(50, 250, 50, u_wins)} \n Computer Wins: {color(250, 50, 50, c_wins)} \n You {Shaper[inp]}  vs {Shaper[c_choice]}  Computer')
 
